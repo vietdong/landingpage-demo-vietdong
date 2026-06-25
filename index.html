@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Demo - Hermes Agent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-900 text-white min-h-screen flex flex-col justify-between">
+    
+    <!-- Navbar -->
+    <header class="container mx-auto px-6 py-4 flex justify-between items-center border-b border-slate-800">
+        <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center font-bold text-xl shadow-lg shadow-indigo-500/30">
+                🚀
+            </div>
+            <span class="text-xl font-bold tracking-tight">Hermes<span class="text-indigo-500">Auto</span></span>
+        </div>
+        <nav class="hidden md:flex space-x-8 text-slate-300 font-medium">
+            <a href="#features" class="hover:text-white transition">Tính năng</a>
+            <a href="#about" class="hover:text-white transition">Giới thiệu</a>
+            <a href="#pricing" class="hover:text-white transition">Bảng giá</a>
+        </nav>
+        <a href="#cta" class="bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2.5 rounded-xl font-semibold shadow-lg shadow-indigo-600/30 transition transform active:scale-95">
+            Bắt đầu ngay
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="container mx-auto px-6 py-16 text-center max-w-4xl flex-grow flex flex-col justify-center">
+        <div class="inline-flex items-center space-x-2 bg-slate-800/80 border border-slate-700 px-4 py-2 rounded-full text-sm text-indigo-400 font-semibold mb-6 mx-auto">
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+            <span>Hệ thống triển khai tự động 100% lên Vercel</span>
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-none mb-8 bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-indigo-400">
+            Biến Ý Tưởng Thành Trang Web Chỉ Trong Tích Tắc
+        </h1>
+        <p class="text-lg md:text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+            Landing page này được thiết kế, lập trình và đồng bộ lên Vercel tự động hoàn toàn bởi Hermes Agent cho tài khoản <span class="text-white font-semibold">@vietdong</span>. Sẵn sàng cho việc chạy quảng cáo Facebook Ads!
+        </p>
+        <div id="cta" class="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto w-full">
+            <button onclick="alert('🎉 Chúc mừng! Đăng ký trải nghiệm thành công. Hệ thống n8n đã ghi nhận lead của bạn!');" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 px-8 rounded-xl shadow-xl shadow-indigo-600/40 transition transform hover:-translate-y-1 flex items-center justify-center space-x-2">
+                <i data-lucide="zap" class="w-5 h-5"></i>
+                <span>Trải nghiệm luồng Automation</span>
+            </button>
+            <a href="https://github.com/vietdong/landingpage-demo-vietdong" target="_blank" class="w-full bg-slate-800 hover:bg-slate-700 text-white font-semibold py-4 px-8 rounded-xl border border-slate-700 transition flex items-center justify-center space-x-2">
+                <i data-lucide="github" class="w-5 h-5"></i>
+                <span>Xem Source Code</span>
+            </a>
+        </div>
+
+        <!-- Feature Grid -->
+        <div id="features" class="grid md:grid-cols-3 gap-8 mt-24 text-left">
+            <div class="bg-slate-800/50 border border-slate-800 p-8 rounded-2xl backdrop-blur-sm">
+                <div class="w-12 h-12 bg-indigo-500/20 text-indigo-400 rounded-xl flex items-center justify-center mb-6">
+                    <i data-lucide="target" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-white">Tối ưu Facebook Ads</h3>
+                <p class="text-slate-400 leading-relaxed">Tốc độ tải trang nhanh tuyệt đối giúp tăng chất lượng quảng cáo và giảm giá mỗi click (CPC).</p>
+            </div>
+            <div class="bg-slate-800/50 border border-slate-800 p-8 rounded-2xl backdrop-blur-sm">
+                <div class="w-12 h-12 bg-indigo-500/20 text-indigo-400 rounded-xl flex items-center justify-center mb-6">
+                    <i data-lucide="refresh-cw" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-white">CI/CD Tự Động</h3>
+                <p class="text-slate-400 leading-relaxed">Mỗi khi cập nhật mã nguồn trên GitHub, Vercel tự động build và búng link mới mà không cần chạm tay.</p>
+            </div>
+            <div class="bg-slate-800/50 border border-slate-800 p-8 rounded-2xl backdrop-blur-sm">
+                <div class="w-12 h-12 bg-indigo-500/20 text-indigo-400 rounded-xl flex items-center justify-center mb-6">
+                    <i data-lucide="git-branch" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-white">Kết nối n8n & API</h3>
+                <p class="text-slate-400 leading-relaxed">Dễ dàng trỏ webhook để hứng thông tin khách hàng (lead) bắn về Telegram, Google Sheets nhanh chóng.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container mx-auto px-6 py-8 border-t border-slate-800 text-center text-slate-500 text-sm mt-16">
+        <p>© 2026 Hermes Agent x Vietdong. Proudly deployed on Vercel.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
